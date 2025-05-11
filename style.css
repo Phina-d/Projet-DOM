@@ -1,0 +1,175 @@
+/* .navbar-brand {
+  color: green !important;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .i {
+    font-size: 35px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: black;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.cart-container {
+  background-color: #e0f7fa; /* Couleur de fond du cadre */
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  
+  #cart-item-name:hover {
+  text-shadow: 1px 1px 2px rgba(0, 128, 0, 0.5);
+  
+}
+
+}
+  .shopping-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 50px 0;
+  }
+  .shopping-card-container .total-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.btn {
+  background-color: #3498db; /* bleu */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.total-price span:not(.btn) {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  font-weight: 500;
+}
+.item {
+  border: 1px solid #ccc;      /* gris clair */
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #333;
+  background-color: #f9f9f9;
+  margin-left: 4px;
+}
+  .total-price span {
+    font-size: 30px;
+  }
+  
+  .total {
+  color: blue;
+  font-size: 10px;
+  padding: 0 4px;
+  line-height: 0.8;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer; /* Indique que c’est cliquable */
+  transition: all 0.2s ease;
+}
+.total:active {
+  background-color: #e0e0e0; /* Fond plus sombre au clic */
+  transform: scale(0.95);   /* Effet d’enfoncement */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+  .list-products {
+  display: flex;
+  flex-wrap: wrap;              /* permet le retour à la ligne */
+  justify-content: center;      /* centre les cartes */
+  gap: 20px;                    /* espace entre les cartes */
+  padding: 20px;
+}
+
+.card-body {
+  flex: 0 1 18rem;              /* chaque carte garde une largeur de 18rem */
+}
+i {
+  margin: 0 10px; /* espace horizontal de 10px autour de chaque icône */
+}
+  .card {
+  width: 250px;             /* largeur fixe */
+  height: 400px;            /* hauteur fixe */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 180px;
+  object-fit: contain;
+}
+
+.card-body {
+  text-align: center;
+  width: 100%;
+}
+
+.unit-price {
+  color: #333;
+  margin: 10px 0;
+}
+
+.quantity {
+  margin: 0 10px;
+}
+
+.section {
+  text-align: center;
+  padding: 20px;
+}
+
+.features {
+  margin-top: 10px;
+}
+
+.features i {
+  margin-right: 8px;
+  color: red;
+  /* Remplace "green" par la couleur de ton choix */
+  margin-right: 8px;
+  /* Optionnel : espace entre l'icône et le texte */
+  font-size: 24px;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  padding: 10px;
+}
+ 
+
+
+  
