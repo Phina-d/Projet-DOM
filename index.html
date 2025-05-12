@@ -82,16 +82,19 @@
   <main>
     <section class="shopping-card-container">
       <div class="total-price">
-        <button class="btn"> Tous </button>
-        <button class="btn"> Tableaux </button>
-        <button class="btn"> sacs </button>
-        <button class="btn"> Montres</button>
+        <div class="container">
+      <h1 class="text-center mt-5">Nos produits</h1>
+      <div class="text-center mt-4 mb-4">
+        <button class="btn btn-primary">Tous</button>
+        <button class="btn btn-outline-primary">Sacs</button>
+        <button class="btn btn-outline-primary">Montres</button>
+        <button class="btn btn-outline-primary">Tableaux</button>
         <button class="btn" > Total price : </button>
         <span class="total"> 0 $ </span>
       </div>
-      <div class="list-products">
+      <div class="row justify-content-center">
         <!-- Product 1 : baskets -->
-        <div class="card-body">
+        <div class="col-md-4 mb-4 card-body" data-category="chausures">
           <div class="card" style="width: 18rem">
             <img src="asset/images/baskets.png" class="card-img-top" alt="baskets" />
             <div class="card-body">
@@ -110,14 +113,14 @@
             </div>
           </div>
         </div>
-        <!-- Product 2 : socks -->
-        <div class="card-body">
+        <!-- Product 1 : sac -->
+        <div class="col-md-4 mb-4 card-body" data-category="sacs">
           <div class="card" style="width: 18rem">
-            <img src="asset/images/socks.png" class="card-img-top" alt="socks" />
+            <img src="asset/images/sac.jpg" class="card-img-top" alt="sac" />
             <div class="card-body">
-              <h5 class="card-title">Socks</h5>
-              <p class="card-text">This is a socks</p>
-              <h4 class="unit-price">20 $</h4>
+              <h5 class="card-title">Bag</h5>
+              <p class="card-text">This is a bag</p>
+               <h4 class="unit-price">50 $</h4>
               <div>
                 <i class="fas fa-plus-circle"></i>
                 <span class="quantity">0</span>
@@ -130,14 +133,274 @@
             </div>
           </div>
         </div>
-        <!-- Product 3 : bag -->
-        <div class="card-body">
+        <!-- Product 1 : montre -->
+        <div class="col-md-4 mb-4 card-body" data-category="montres">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/montre brc.jpg" class="card-img-top" alt="baskets" />
+            <div class="card-body">
+              <h5 class="card-title">Watch</h5>
+              <p class="card-text">This is a Watch</p>
+                         <h4 class="unit-price">40 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : sac -->
+        <div class="col-md-4 mb-4 card-body" data-category="sacs">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/sac2.jpg" class="card-img-top" alt="sac" />
+            <div class="card-body">
+              <h5 class="card-title">Bag</h5>
+              <p class="card-text">This is a bag</p>
+               <h4 class="unit-price">50 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product  : montre -->
+        <div class="col-md-4 mb-4 card-body" data-category="montres">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/montre D.jpg" class="card-img-top" alt="montre" />
+            <div class="card-body">
+              <h5 class="card-title">Watch</h5>
+              <p class="card-text">This is a Watch</p>
+                         <h4 class="unit-price">60 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : sac -->
+        <div class="col-md-4 mb-4" data-category="sacs">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/sac3.jpg" class="card-img-top" alt="sac" />
+            <div class="card-body">
+              <h5 class="card-title">Bag</h5>
+              <p class="card-text">This is a bag</p>
+               <h4 class="unit-price">50 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : montre -->
+        <div class="col-md-4 mb-4 card-body" data-category="montres">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/montre H.jpg" class="card-img-top" alt="montre" />
+            <div class="card-body">
+              <h5 class="card-title">Watch</h5>
+              <p class="card-text">This is a Watch</p>
+                         <h4 class="unit-price">40 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product : tableaux -->
+        <div class="col-md-4 mb-4 card-body" data-category="tableaux">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/Tableau 3.jpg" class="card-img-top" alt="tableau" />
+            <div class="card-body">
+              <h5 class="card-title">Painting</h5>
+              <p class="card-text">This is a Painting</p>
+               <h4 class="unit-price">350 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : tableau -->
+        <div class="col-md-4 mb-4 card-body" data-category="tableaux">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/Tableau 2.jpg" class="card-img-top" alt="tableau" />
+            <div class="card-body">
+              <h5 class="card-title">Painting</h5>
+              <p class="card-text">This is a Painting</p>
+                         <h4 class="unit-price">340 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : tableau -->
+        <div class="col-md-4 mb-4 card-body" data-category="tableaux">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/Tableau 4.jpg" class="card-img-top" alt="Tableau" />
+            <div class="card-body">
+              <h5 class="card-title">Painting</h5>
+              <p class="card-text">This is a Painting</p>
+               <h4 class="unit-price">250 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : salon -->
+        <div class="col-md-4 mb-4 card-body" data-category="salons">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/salon2.jpg" class="card-img-top" alt="salon" />
+            <div class="card-body">
+              <h5 class="card-title">Living Room</h5>
+              <p class="card-text">This is a Living Room</p>
+                         <h4 class="unit-price">340 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : salon -->
+        <div class="col-md-4 mb-4 card-body" data-category="salon">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/salon2.jpg" class="card-img-top" alt="salon" />
+            <div class="card-body">
+              <h5 class="card-title">Living room</h5>
+              <p class="card-text">This is a Linving room</p>
+               <h4 class="unit-price">350 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : chaussure -->
+        <div class="col-md-4 mb-4 card-body" data-category="chaussures">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/chaus D1.jpg" class="card-img-top" alt="chaussure" />
+            <div class="card-body">
+              <h5 class="card-title">Shoes</h5>
+              <p class="card-text">This is a Shoes</p>
+                         <h4 class="unit-price">50 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : chaussure -->
+        <div class="col-md-4 mb-4 card-body" data-category="chaussures">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/chaus D.jpg" class="card-img-top" alt="chaussure" />
+            <div class="card-body">
+              <h5 class="card-title">Shoes</h5>
+              <p class="card-text">This is a Shoes</p>
+                         <h4 class="unit-price">40 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : chaussure -->
+        <div class="col-md-4 mb-4 card-body" data-category="chaussures">
+          <div class="card" style="width: 18rem">
+            <img src="asset/images/baskets.png" class="card-img-top" alt="chaussure" />
+            <div class="card-body">
+              <h5 class="card-title">Shoes</h5>
+              <p class="card-text">This is a Shoes</p>
+                         <h4 class="unit-price">50 $</h4>
+              <div>
+                <i class="fas fa-plus-circle"></i>
+                <span class="quantity">0</span>
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 1 : bag -->
+        <div class="col-md-4 mb-4 card-body" data-category="bag">
           <div class="card" style="width: 18rem">
             <img src="asset/images/bag.png" class="card-img-top" alt="bag" />
             <div class="card-body">
               <h5 class="card-title">Bag</h5>
               <p class="card-text">This is a Bag</p>
-              <h4 class="unit-price">50 $</h4>
+                         <h4 class="unit-price">40 $</h4>
               <div>
                 <i class="fas fa-plus-circle"></i>
                 <span class="quantity">0</span>
@@ -150,16 +413,14 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="d-flex flex-wrap gap-3 justify-content-center">
-  <!-- Product 4 : Montre -->
-        <div class="card-body">
+        <!-- Product 1 :  -->
+        <div class="col-md-4 mb-4 card-body" data-category="Habits">
           <div class="card" style="width: 18rem">
-            <img src="asset/images/montre H.jpg" class="card-img-top" alt="baskets" />
+            <img src="asset/images/robe.jpg" class="card-img-top" alt="robe" />
             <div class="card-body">
-              <h5 class="card-title">Montre</h5>
-              <p class="card-text">This is a watch</p>
-              <h4 class="unit-price">50 $</h4>
+              <h5 class="card-title">Dress</h5>
+              <p class="card-text">This is a Dress</p>
+                         <h4 class="unit-price">40 $</h4>
               <div>
                 <i class="fas fa-plus-circle"></i>
                 <span class="quantity">0</span>
@@ -172,14 +433,14 @@
             </div>
           </div>
         </div>
-        <!-- Product 5 : Sac -->
-        <div class="card-body">
+        <!-- Product 1 :  -->
+        <div class="col-md-4 mb-4 card-body" data-category="Habits">
           <div class="card" style="width: 18rem">
-            <img src="asset/images/sac.jpg" class="card-img-top" alt="baskets" />
+            <img src="asset/images/nuissette.jpg" class="card-img-top" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Bag</h5>
-              <p class="card-text">This is a bag</p>
-              <h4 class="unit-price">60 $</h4>
+              <h5 class="card-title">Nightie</h5>
+              <p class="card-text">This is a Nightie</p>
+                         <h4 class="unit-price">30 $</h4>
               <div>
                 <i class="fas fa-plus-circle"></i>
                 <span class="quantity">0</span>
@@ -192,330 +453,6 @@
             </div>
           </div>
         </div>
-        <!-- Product 6 : Cuisinière -->
-        <div class="card-body">
-          <div class="card" style="width: 18rem">
-            <img src="asset/images/IMG-20250508-WA0068.jpg" class="card-img-top" alt="baskets" />
-            <div class="card-body">
-              <h5 class="card-title">Stove</h5>
-              <p class="card-text">This is a Stove</p>
-              <h4 class="unit-price">75 $</h4>
-              <div>
-                <i class="fas fa-plus-circle"></i>
-                <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
-              </div>
-              <div>
-                <i class="fas fa-trash-alt"></i>
-                <i class="fas fa-heart"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-wrap gap-3 justify-content-center">
-          <!-- Product 7 : Crampon -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/crampon.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Spike</h5>
-                <p class="card-text">This is a spike</p>
-                <h4 class="unit-price">65 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 8 : Tableau -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/Tableau 3.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Painting</h5>
-                <p class="card-text">This is a painting</p>
-                <h4 class="unit-price">150 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 9 : salon -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/salon.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Living room</h5>
-                <p class="card-text">This is a living room</p>
-                <h4 class="unit-price">75 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="d-flex flex-wrap gap-3 justify-content-center">
-          <!-- Product 10 : Vaisselle -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/IMG-20250508-WA0075.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Dishes</h5>
-                <p class="card-text">This is a Dishes</p>
-                <h4 class="unit-price">175 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 11 : Chaussure -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/chaus D1.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Shoes</h5>
-                <p class="card-text">This is a Woman shoes</p>
-                <h4 class="unit-price">140 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 12 : Bracelet  -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/Bracelet.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Bracelet</h5>
-                <p class="card-text">This is a Bracelet</p>
-                <h4 class="unit-price">25 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-wrap gap-3 justify-content-center">
-          <!-- Product 13 : Salon -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/téléchargement (5).jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Living room</h5>
-                <p class="card-text">This is a Livieng room</p>
-                <h4 class="unit-price">500 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 14 : Télévision -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/IMG-20250508-WA0089.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">TV</h5>
-                <p class="card-text">This is a TV</p>
-                <h4 class="unit-price">200 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 15 : Cuisine  -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/IMG-20250508-WA0102.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Kitchen</h5>
-                <p class="card-text">This is a kitchen </p>
-                <h4 class="unit-price">600 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-wrap gap-3 justify-content-center">
-          <!-- Product 16 : Nuisette -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/nuissette.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Nightie</h5>
-                <p class="card-text">This is a Nightie</p>
-                <h4 class="unit-price">50 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 17 : Chambre à coucher -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/IMG-20250508-WA0106.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Bedroom</h5>
-                <p class="card-text">This is a Bedroom</p>
-                <h4 class="unit-price">200 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 18 : Montre  -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/montre.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Watch</h5>
-                <p class="card-text">This is a Watch </p>
-                <h4 class="unit-price">20 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 19 : Robe -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/Robe (2).jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Dress</h5>
-                <p class="card-text">This is a Dress</p>
-                <h4 class="unit-price">30 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 20 : Tableau -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/Tableau.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Painting</h5>
-                <p class="card-text">This is a Painting</p>
-                <h4 class="unit-price">250 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Product 21 : Veste -->
-          <div class="card-body">
-            <div class="card" style="width: 18rem">
-              <img src="asset/images/veste.jpg" class="card-img-top" alt="baskets" />
-              <div class="card-body">
-                <h5 class="card-title">Lady Suit</h5>
-                <p class="card-text">This is a Lady suit</p>
-                <h4 class="unit-price">60 $</h4>
-                <div>
-                  <i class="fas fa-plus-circle"></i>
-                  <span class="quantity">0</span>
-                  <i class="fas fa-minus-circle"></i>
-                </div>
-                <div>
-                  <i class="fas fa-trash-alt"></i>
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </div>
     </section>
   </main>
   </div>

@@ -72,6 +72,11 @@
   background-color: #f9f9f9;
   margin-left: 4px;
 }
+ .item btn {
+    padding: 10px;
+    margin: 5px;
+    background-color: #eee;
+     }
   .total-price span {
     font-size: 30px;
   }
@@ -122,7 +127,7 @@ i {
 }
 
 .card img {
-  height: 180px;
+  height: 120px;
   object-fit: contain;
 }
 
