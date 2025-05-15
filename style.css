@@ -20,20 +20,61 @@
     align-items: center;
   }
   
-.cart-container {
-  background-color: #e0f7fa; /* Couleur de fond du cadre */
-  padding: 6px 12px;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
   
-  #cart-item-name:hover {
-  text-shadow: 1px 1px 2px rgba(0, 128, 0, 0.5);
-  
-}
+  .step-container {
+      background: linear-gradient(135deg, #e6ffe6, #f4fff4);
+      border-radius: 20px;
+      padding: 20px 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px auto;
+      max-width: 800px;
+    }
 
-}
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .step:hover {
+      background-color: #d1f7d1;
+      transform: scale(1.03);
+    }
+
+    .step i {
+      font-size: 18px;
+      color: #198754;
+    }
+
+    .cart-link {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cart-link:hover {
+      color: #198754;
+    }
+
+    #cart-count {
+      background-color: #198754;
+      color: white;
+      border-radius: 50%;
+      padding: 3px 8px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
   .shopping-card-container {
     display: flex;
     flex-direction: column;
@@ -50,6 +91,21 @@
   flex-wrap: nowrap;
 }
 
+.fas {
+  display: inline-block;
+  font-size: 24px;
+  margin: 5px;
+}
+
+/* Forcer retour à la ligne avant le 3e icône (fa-trash-alt) */
+.fas:nth-of-type(3) {
+  display: block;
+  margin-top: 40px; /* espace vertical entre les deux lignes */
+}
+
+.fas.fa-trash-alt {
+  margin-right: 60px;
+}
 .btn {
   background-color: #3498db; /* bleu */
   color: white;
@@ -57,6 +113,7 @@
   border-radius: 4px;
   font-weight: bold;
 }
+
 .total-price span:not(.btn) {
   padding: 8px 12px;
   border: 1px solid #ccc;
@@ -127,7 +184,7 @@ i {
 }
 
 .card img {
-  height: 120px;
+  height: 150px;
   object-fit: contain;
 }
 
@@ -143,6 +200,18 @@ i {
 
 .quantity {
   margin: 0 10px;
+}
+.fa-trash-alt {
+  color: #dc3545; /* rouge */
+}
+
+.fa-heart {
+  color: rosybrown; /* rose/rouge pour "favori" */
+}
+
+i.fas:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 
 .section {

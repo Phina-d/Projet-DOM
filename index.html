@@ -11,9 +11,7 @@
   <!-- JS Bootstrap (nécessaire pour dropdown) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <title>Workshop DOM</title>
 </head>
@@ -62,15 +60,17 @@
             </button>
             <i class="las la-shopping-cart"></i>
           </form>
-          <div>
-            <div class="container">
-              <ul class="header-items">
-                <span class="btn"><i class="fas fa-credit-card" style="font-size: 14px; color: green;"></i> Paiement</span>
-                <a href="/panier" style="text-decoration: none; color: inherit;">
-                  <span class="cart-container">
-   <span id="cart-item-name">Article panier</span>&nbsp;&nbsp;
-   <span class="cart-icon"><i class="fas fa-shopping-cart" style="font-size: 15px; color: green;"></i></span>
-<span id="cart-count">0</span>&nbsp;&nbsp;
+
+          <div class="step-container">
+  <div class="step">
+    <i class="fas fa-credit-card"></i>
+    <span>Paiement</span>
+  </div>
+  <div class="step">
+    <a href="panier.html" class="cart-link">
+      <span id="cart-item-name">Article panier</span>
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
 
 </a>
               </ul>
@@ -92,9 +92,13 @@
         <button class="btn" > Total price : </button>
         <span class="total"> 0 $ </span>
       </div>
+      <div id="cart-items" class="mt-4">
+  <h4>Contenu du panier</h4>
+  <ul class="list-group"></ul>
+</div>
       <div class="row justify-content-center">
         <!-- Product 1 : baskets -->
-        <div class="col-md-4 mb-4 card-body" data-category="chausures">
+        <div class="col-md-4 mb-4 card-body" data-category="chaussures">
           <div class="card" style="width: 18rem">
             <img src="asset/images/baskets.png" class="card-img-top" alt="baskets" />
             <div class="card-body">
@@ -102,9 +106,9 @@
               <p class="card-text">This is a basket</p>
               <h4 class="unit-price">100 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -122,9 +126,9 @@
               <p class="card-text">This is a bag</p>
                <h4 class="unit-price">50 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -136,15 +140,15 @@
         <!-- Product 1 : montre -->
         <div class="col-md-4 mb-4 card-body" data-category="montres">
           <div class="card" style="width: 18rem">
-            <img src="asset/images/montre brc.jpg" class="card-img-top" alt="baskets" />
+            <img src="asset/images/montre brc.jpg" class="card-img-top" alt="montre" />
             <div class="card-body">
               <h5 class="card-title">Watch</h5>
               <p class="card-text">This is a Watch</p>
                          <h4 class="unit-price">40 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -160,11 +164,11 @@
             <div class="card-body">
               <h5 class="card-title">Bag</h5>
               <p class="card-text">This is a bag</p>
-               <h4 class="unit-price">50 $</h4>
+               <h4 class="unit-price">65 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -182,9 +186,9 @@
               <p class="card-text">This is a Watch</p>
                          <h4 class="unit-price">60 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -194,17 +198,17 @@
           </div>
         </div>
         <!-- Product 1 : sac -->
-        <div class="col-md-4 mb-4" data-category="sacs">
+        <div class="col-md-4 mb-4 card-body" data-category="sacs">
           <div class="card" style="width: 18rem">
             <img src="asset/images/sac3.jpg" class="card-img-top" alt="sac" />
             <div class="card-body">
               <h5 class="card-title">Bag</h5>
               <p class="card-text">This is a bag</p>
-               <h4 class="unit-price">50 $</h4>
+               <h4 class="unit-price">60 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -222,9 +226,9 @@
               <p class="card-text">This is a Watch</p>
                          <h4 class="unit-price">40 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -242,9 +246,9 @@
               <p class="card-text">This is a Painting</p>
                <h4 class="unit-price">350 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -262,9 +266,9 @@
               <p class="card-text">This is a Painting</p>
                          <h4 class="unit-price">340 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -282,9 +286,9 @@
               <p class="card-text">This is a Painting</p>
                <h4 class="unit-price">250 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -302,9 +306,9 @@
               <p class="card-text">This is a Living Room</p>
                          <h4 class="unit-price">340 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -316,15 +320,15 @@
         <!-- Product 1 : salon -->
         <div class="col-md-4 mb-4 card-body" data-category="salon">
           <div class="card" style="width: 18rem">
-            <img src="asset/images/salon2.jpg" class="card-img-top" alt="salon" />
+            <img src="asset/images/IMG-20250508-WA0069.jpg" class="card-img-top" alt="salon" />
             <div class="card-body">
               <h5 class="card-title">Living room</h5>
               <p class="card-text">This is a Linving room</p>
                <h4 class="unit-price">350 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -342,9 +346,9 @@
               <p class="card-text">This is a Shoes</p>
                          <h4 class="unit-price">50 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -362,9 +366,9 @@
               <p class="card-text">This is a Shoes</p>
                          <h4 class="unit-price">40 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -376,15 +380,15 @@
         <!-- Product 1 : chaussure -->
         <div class="col-md-4 mb-4 card-body" data-category="chaussures">
           <div class="card" style="width: 18rem">
-            <img src="asset/images/baskets.png" class="card-img-top" alt="chaussure" />
+            <img src="asset/images/crampon.jpg" class="card-img-top" alt="chaussure" />
             <div class="card-body">
               <h5 class="card-title">Shoes</h5>
               <p class="card-text">This is a Shoes</p>
                          <h4 class="unit-price">50 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -402,9 +406,9 @@
               <p class="card-text">This is a Bag</p>
                          <h4 class="unit-price">40 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -422,9 +426,9 @@
               <p class="card-text">This is a Dress</p>
                          <h4 class="unit-price">40 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -436,15 +440,15 @@
         <!-- Product 1 :  -->
         <div class="col-md-4 mb-4 card-body" data-category="Habits">
           <div class="card" style="width: 18rem">
-            <img src="asset/images/nuissette.jpg" class="card-img-top" alt="" />
+            <img src="asset/images/nuissette.jpg" class="card-img-top" alt="nuisette" />
             <div class="card-body">
               <h5 class="card-title">Nightie</h5>
               <p class="card-text">This is a Nightie</p>
                          <h4 class="unit-price">30 $</h4>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i> 
                 <span class="quantity">0</span>
-                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-plus-circle"></i>
               </div>
               <div>
                 <i class="fas fa-trash-alt"></i>
@@ -493,6 +497,7 @@
 
   <!-- My JS -->
   <script src="app.js"></script>
+  
 </body>
 
 </html>
